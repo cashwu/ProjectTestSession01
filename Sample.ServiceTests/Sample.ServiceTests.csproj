@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolInfoServiceTests.cs" />
+    <Compile Include="TestHooks.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sample.Repository\Sample.Repository.csproj">
@@ -89,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="TestData\SchoolInfoModel.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
